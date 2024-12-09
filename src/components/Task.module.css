@@ -1,0 +1,159 @@
+.taskContent {
+  display: flex;
+  flex-direction: column;
+
+  width: 46rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.taskInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.taskCreated {
+  color: var(--blue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.taskCreated span {
+  border-radius: 1rem;
+  font-weight: bold;
+  padding: 0.125rem 0.575rem;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  font-size: 0.75rem;
+}
+
+.taskDone {
+  color: var(--purple);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.taskDone span {
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 0.125rem 0.575rem;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  font-size: 0.75rem;
+}
+
+.taskListEmptyContent {
+  border-top: 0.125rem solid var(--gray-400);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskListEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+
+  color: var(--gray-300);
+}
+
+.taskListEmpty img {
+  margin-bottom: 1rem;
+}
+
+.taskListEmpty p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.taskListEmpty span {
+  font-weight: normal;
+}
+
+taskListContent {
+  width: 100%;
+}
+
+.task {
+  box-sizing: initial;
+  display: flex;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 0.75rem;
+}
+
+.task button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  line-height: 0;
+}
+
+.task button:hover {
+  cursor: pointer;
+}
+
+.taskChecked .circleIcon {
+  color: var(--blue);
+}
+
+.taskChecked .circleIcon:hover {
+  color: var(--blue-dark);
+}
+
+.taskChecked .checkedIcon {
+  color: var(--purple);
+}
+
+.taskChecked .checkedIcon:hover {
+  color: var(--purple-dark);
+}
+
+.taskTrash svg {
+  color: var(--gray-300);
+}
+
+.taskTrash svg:hover {
+  color: var(--danger);
+}
+
+.taskTrash {
+  background-color: var(--gray-400);
+  border: 0;
+  border-radius: 4px;
+  line-height: normal;
+  padding: 0.125rem;
+}
+
+.taskTrash:hover {
+  background-color: var(--gray-400);
+}
+
+.task p {
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  user-select: none;
+}
+
+.task:has(.checkedIcon) p {
+  text-decoration: line-through;
+}
